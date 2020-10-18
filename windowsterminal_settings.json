@@ -1,0 +1,70 @@
+chema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{79285a8e-036c-446f-8a9c-78994e34bf78}",
+
+    "profiles":
+    {
+        "defaults": {
+            "fontFace" : "Cascadia Mono PL",
+            "fontSize" : 12,
+            "cursorHeight" : 25,
+            "cursorShape" : "vintage",
+            "colorScheme" : "Gruvbox Dark"
+        },
+        "list":
+        [
+            {
+                "closeOnExit" : false,
+                "commandline" : "powershell.exe",
+                "cursorColor" : "#00FF00",
+                "guid" : "{79285a8e-036c-446f-8a9c-78994e34bf78}",
+                "historySize" : 9001,
+                "name" : "PowerShell",
+                "snapOnInput" : true,
+                "startingDirectory" : "%USERPROFILE%"
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name" : "Gruvbox Dark",
+            "background" : "#282828",
+            "black" : "#282828",
+            "blue" : "#458588",
+            "brightBlack" : "#928374",
+            "brightBlue" : "#83A598",
+            "brightCyan" : "#8EC07C",
+            "brightGreen" : "#B8BB26",
+            "brightPurple" : "#D3869B",
+            "brightRed" : "#FB4934",
+            "brightWhite" : "#EBDBB2",
+            "brightYellow" : "#FABD2F",
+            "cyan" : "#689D6A",
+            "foreground" : "#EBDBB2",
+            "green" : "#98971A",            
+            "purple" : "#B16286",
+            "red" : "#CC241D",
+            "white" : "#A89984",
+            "yellow" : "#D79921"
+        }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
+
